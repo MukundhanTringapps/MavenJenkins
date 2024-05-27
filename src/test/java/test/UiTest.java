@@ -3,6 +3,7 @@ package test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -23,6 +24,11 @@ public class UiTest {
 		else if(browserValue.equalsIgnoreCase("edge")){
 			driver = new EdgeDriver();
 			System.out.println("Current driver invoked is Edge");
+		}
+
+		else if(browserValue.equalsIgnoreCase("firefox")){
+			driver = new FirefoxDriver();
+			System.out.println("Current driver invoked is Firefox");
 		}
 		
 		driver.get("https://www.google.com/");
