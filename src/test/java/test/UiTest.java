@@ -20,6 +20,7 @@ public class UiTest {
 			driver = new ChromeDriver();
 			System.out.println("Current driver invoked is Chrome");
 		}
+			
 
 		else if(browserValue.equalsIgnoreCase("edge")){
 			driver = new EdgeDriver();
