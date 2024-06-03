@@ -32,6 +32,7 @@ public class UiTest {
 		}
 		
 		driver.get("https://www.google.com/");
+		System.out.println(driver.manage().window().getSize());
 		driver.manage().window().maximize();
 		Assert.assertTrue(driver.getTitle().equals("Google"));
 		driver.quit();
