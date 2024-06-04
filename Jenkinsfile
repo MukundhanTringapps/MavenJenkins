@@ -25,7 +25,6 @@ pipeline {
         }
     }
     
-    
    post { 
         always { 
            emailext body: 'Test summary', subject: 'Test message', to: 'mukundhan.k@tringapps.com'
